@@ -1,0 +1,81 @@
+#scard {
+
+    p,
+    h4 {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    height: 240px;
+    width: 180px;
+    background: #181818;
+    padding: 20px;
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+    position: relative;
+
+    &:hover {
+        background: rgba(23, 23, 23, 0.9);
+    }
+
+    img {
+        height: 140px;
+        width: 140px;
+        border-radius: 14px;
+        box-shadow: 0 0 16px #181818;
+    }
+
+    p {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.42px;
+        margin-top: 16px;
+        text-overflow: ellipsis;
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 140px;
+    }
+
+    h4 {
+        color: rgb(255, 255, 255, 0.6);
+        font-family: Inter;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .playButton {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        top: 130px;
+        right: 20px;
+        background-color: greenyellow;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        cursor: pointer;
+        transition: all ease 0.5s;
+        transform: translateY(20px);
+
+        &:active {
+            scale: 0.8;
+        }
+    }
+
+    &:hover {
+        .playButton {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+}

@@ -1,0 +1,182 @@
+.rightTopNav {
+    display: flex;
+    gap: 8px;
+    margin: 24px 24px 0 24px;
+    justify-content: space-between;
+    align-items: center;
+    left: 24px;
+
+    .routes {
+        display: flex;
+        gap: 8px;
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 36px;
+            width: 36px;
+            border-radius: 38px;
+            background: rgba(255, 255, 255, 0.10);
+
+            &:nth-child(2) {
+                opacity: 0.4;
+            }
+        }
+    }
+
+    .profile {
+        background-color: rgba(255, 255, 255, 0.10);
+        border-radius: 22.5px;
+        position: absolute;
+        right: 24px;
+        top: 24px;
+
+        .topProfile {
+            border-radius: 38px;
+            display: flex;
+            align-items: center;
+            gap: 0;
+            cursor: pointer;
+
+            img {
+                height: 45px;
+                width: 45px;
+                border-radius: 38px;
+                border: 5px solid rgba(255, 255, 255, 0.10);
+            }
+
+            .slider1 {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                max-width: 0px;
+                // display: none;
+                overflow: hidden;
+
+                p {
+                    color: #ffffffc8;
+                    font-family: Inter;
+                    font-size: 14px;
+                }
+            }
+
+            .openSlider1 {
+                padding: 0 10px;
+                max-width: 200px;
+            }
+        }
+
+        .slider2openslider1 {
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+
+        .slider2 {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 0;
+            overflow: hidden;
+            max-height: 0;
+            max-width: 0;
+
+            p {
+                color: #ffffffc8;
+                font-family: Inter;
+                font-size: 14px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: 100px;
+
+                &:nth-child(2) {
+                    font-size: 12px;
+                }
+            }
+
+            .logBtn {
+                margin-top: 10px;
+                width: 90%;
+                padding: 2px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #23a6d5;
+                border-radius: 22.5px;
+                animation: bgchange 2s ease infinite;
+
+                // #ee7752, #e73c7e, #23a6d5, #23d5ab, #b295df,#3da8d8,#1ab34e,#499ae2
+                @keyframes bgchange {
+                    0% {
+                        background: #23a6d5;
+                    }
+
+                    11% {
+                        background: #d5ba23;
+                    }
+
+                    22% {
+                        background: #ee7752;
+                    }
+
+                    33% {
+                        background: #e73c7e;
+                    }
+
+                    44% {
+                        background: #23d5ab;
+                    }
+
+                    55% {
+                        background: #b295df;
+                    }
+
+                    66% {
+                        background: #3da8d8;
+                    }
+
+                    77% {
+                        background: #1ab34e;
+                    }
+
+                    88% {
+                        background: #499ae2;
+                    }
+
+                    100% {
+                        background: #23a6d5;
+                    }
+                }
+
+                .btn {
+                    padding: 5px 0;
+                    background-color: rgb(37, 37, 37);
+                    border-radius: 22.5px;
+                    width: 100%;
+                    text-align: center;
+                    border: none;
+                    outline: none;
+                    a {
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .slider1openslider2 {
+            max-width: 500px;
+        }
+
+        .openSlider2 {
+            max-height: 500px;
+            padding: 10px 0;
+        }
+
+
+    }
+
+
+}

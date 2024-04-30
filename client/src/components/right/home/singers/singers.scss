@@ -1,0 +1,36 @@
+#singers {
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.10);
+    display: flex;
+    padding: 16px;
+    width: auto;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+
+    img {
+        height: auto;
+        width: 150px;
+        border-radius: 50%;
+    }
+
+    h4 {
+        color: rgb(255, 255, 255, 0.6);
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    p {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 16px;
+        margin-top: 8px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}

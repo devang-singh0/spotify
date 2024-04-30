@@ -1,0 +1,111 @@
+#footer {
+    margin-top: 50px;
+    width: 100%;
+    padding: 24px;
+    padding-bottom: 50px;
+
+    hr {
+        border: 0.5px solid rgba(255, 255, 255, 0.20);
+    }
+
+    .second {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+            display: flex;
+            gap: 10px;
+            color: rgb(255, 255, 255, 0.6);
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding: 24px 0;
+
+            span {
+                cursor: pointer;
+
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+
+        h4 {
+            color: #FFF;
+            font-size: 14px;
+            margin-top: 8px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+
+    .first {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 30px;
+
+        .links {
+            display: flex;
+            gap: 30px;
+
+            div {
+                ul {
+                    list-style: none;
+                    display: flex;
+                    gap: 8px;
+                    flex-direction: column;
+
+                    li {
+                        color: rgb(255, 255, 255, 0.6);
+                        font-family: Inter;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        cursor: pointer;
+
+                        &:nth-child(1) {
+                            color: #FFF;
+                            font-family: Inter;
+                            font-size: 16px;
+                            margin-top: 8px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+
+                            &:hover {
+                                scale: 1;
+                            }
+                        }
+
+                        &:hover {
+                            scale: 1.05;
+                        }
+                    }
+                }
+            }
+        }
+
+        .socials {
+            display: flex;
+            gap: 10px;
+
+            svg {
+                height: 40px;
+                width: 40px;
+                padding: 10px;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.10);
+                cursor: pointer;
+
+                &:hover {
+                    transform: translateY(-5px);
+                }
+            }
+        }
+    }
+}
